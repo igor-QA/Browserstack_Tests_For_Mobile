@@ -26,7 +26,7 @@ public class BrowserstackiOSTests extends TestBase {
         $(AccessibilityId("Text Input")).setValue("hello@browserstack.com").pressEnter();
         $(AccessibilityId("Text Output")).shouldHave(text("hello@browserstack.com"));
     }
-
+    @Story("Google Maps")
     @Test
     @DisplayName("Successful search city in Google maps")
     public void checkSearchCityViaGMaps() {
